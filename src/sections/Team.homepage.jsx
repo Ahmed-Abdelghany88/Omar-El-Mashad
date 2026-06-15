@@ -1,6 +1,6 @@
 import React from 'react'
 import teammember3 from "../assets/img/team-3.jpg";
-import teammember2 from "../assets/img/team-2.jpg";
+//import teammember2 from "../assets/img/team-2.jpg";
 import teammember1 from "../assets/img/team-1.jpg";
 
 import '../sections/Team.css';
