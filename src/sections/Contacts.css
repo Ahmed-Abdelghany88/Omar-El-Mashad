@@ -1,0 +1,180 @@
+/* ===============================
+   Footer Base
+================================ */
+
+.footer {
+  background-color: #000910;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer-top {
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===============================
+   Layout
+================================ */
+
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 5%;
+}
+
+.footer-contact,
+.useful-links,
+.our-services
+ {
+  flex: 1 1 20%;
+}
+.team-mails{
+  width: 400px;
+}
+
+/* ===============================
+   Typography
+================================ */
+
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6,
+.footer p,
+.footer li,
+.footer span {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.footer h3 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.footer p,
+.footer li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ===============================
+   Links
+================================ */
+
+.footer a {
+  color: #ffffff;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #cccccc;
+}
+
+/* ===============================
+   Images & Icons
+================================ */
+
+.footer-img {
+  width: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.footer i,
+.footer svg {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+/* ===============================
+   Lists
+================================ */
+
+.footer ul {
+  /* list-style: none; */
+  list-style-type: "> ";
+  padding: 0;
+  margin-left: 15px;
+}
+
+.footer li {
+  margin-bottom: 6px;
+  color: #42607c;
+}
+.footer li span{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.job-emails {
+  white-space: normal;
+}
+
+/* ===============================
+   Mobile (≤ 449px)
+================================ */
+
+@media (max-width: 449px) {
+  .row-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+  .useful-links,
+  .our-services,
+  .team-mails {
+    width: 100%;
+  }
+  .footer-contact{
+    order: 2;
+    width: 100%;
+  }
+
+  .footer-img {
+    width: 90px;
+  }
+}
+
+/* ===============================
+   Tablet (450px – 768px)
+================================ */
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .row-footer {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+   .footer-contact{
+    order: 2;
+    width: 100%;
+  }
+  .footer-img {
+    width: 110px;
+  }
+  .team-mails{
+    width: auto;
+  }
+}
+
+/* ===============================
+   Desktop (≥ 769px)
+================================ */
+
+@media (min-width: 769px) {
+  .row-footer {
+    /* justify-content: space-evenly; */
+  }
+
+  .footer-img {
+    width: 140px;
+  }
+}
